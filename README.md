@@ -429,7 +429,7 @@ See [context support in the database/sql package](https://golang.org/doc/go1.8#d
 ### `LOAD DATA LOCAL INFILE` support
 For this feature you need direct access to the package. Therefore you must change the import path (no `_`):
 ```go
-import "github.com/go-sql-driver/mysql"
+import "(github.com/JayyyOne/mysql/"
 ```
 
 Files must be whitelisted by registering them with `mysql.RegisterLocalFile(filepath)` (recommended) or the Whitelist check must be deactivated by using the DSN parameter `allowAllFiles=true` ([*Might be insecure!*](http://dev.mysql.com/doc/refman/5.7/en/load-data-local.html)).
